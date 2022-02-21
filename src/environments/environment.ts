@@ -5,6 +5,16 @@
 export const environment = {
   production: false
 };
+export const  firebaseConfig = {
+  apiKey: "AIzaSyDlm-M4ZRC7fJv04NbZdt1d4bvPjbcouDg",
+  authDomain: "inventaria-2df6a.firebaseapp.com",
+  databaseURL: "https://inventaria-2df6a.firebaseio.com",
+  projectId: "inventaria-2df6a",
+  storageBucket: "inventaria-2df6a.appspot.com",
+  messagingSenderId: "806113627831",
+  appId: "1:806113627831:web:28b5b16f571586de658732"
+};
+
 
 /*
  * For easier debugging in development mode, you can import the following file

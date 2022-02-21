@@ -1,0 +1,50 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-button slot="start" fill="clear" >
+      <ion-icon  name="arrow-back-outline" style="color: #000">
+      </ion-icon>
+    </ion-button>
+    <ion-title>Modifica inventario</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <h3>Datos del inventario</h3>
+  <ion-item>
+    <ion-label position="floating">Nombre del producto</ion-label>
+    <ion-input [(ngModel)]="nombre" type="text" name="nombre"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Cantidad</ion-label>
+    <ion-input [(ngModel)]="cantidad" type="text" name="cantidad"></ion-input>
+  </ion-item>
+ 
+  <br>
+
+  <h3>Datos del EOQ</h3>
+  <ion-item>
+    <ion-label position="floating">Demanda mensual del producto</ion-label>
+    <ion-input [(ngModel)]="demanda" type="number" name="pr"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Costo de preparacion</ion-label>
+    <ion-input [(ngModel)]="cp" type="number" name="pr"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Costo anual de mantenimiento</ion-label>
+    <ion-input [(ngModel)]="cam" type="number" name="pr"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Tiemopo de entrega</ion-label>
+    <ion-input [(ngModel)]="te" type="number" name="pr"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Costo por unidad</ion-label>
+    <ion-input [(ngModel)]="cxu" type="number" name="pr"></ion-input>
+  </ion-item>
+ 
+<ion-button  expand="block">Añadir</ion-button>
+<br>
+
+</ion-content>
+

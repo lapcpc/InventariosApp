@@ -1,0 +1,35 @@
+
+
+<ion-header>
+  <ion-toolbar>
+    <ion-button slot="start" fill="clear" (click)="onReturn()">
+      <ion-icon  name="arrow-back-outline" style="color: #000">
+      </ion-icon>
+    </ion-button>
+    <ion-title>{{name.nombrei}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+   
+<ion-content>  
+  <ion-card>  
+    <ion-card-header>  
+     <h4>Estado: nomal</h4>  
+    </ion-card-header>  
+          
+    <ion-list>  
+      <ion-item-sliding>
+
+        <ion-item>Cantidad en almacen : {{name.cantidad}}<ion-icon name="arrow-back-outline" slot="end"></ion-icon></ion-item>
+    
+        <ion-item-options >
+          <button (click)="modificarInventario()" >Modifica</button>
+        </ion-item-options>
+
+      </ion-item-sliding>
+      <ion-item>Cantidad Optima de Pedido: {{calcularCantidadOptimaDePedido(name.demanda, name.costoDePreparacion, name.costoAnualDeMantenimiento)}}</ion-item>        
+      <ion-item>Calcular Punto de Reorden: {{calcularPuntoDeReorden(name.demanda, name.tiempoEntrega)}}</ion-item>          
+      <ion-item>Costo Anual de Mantenimiento: {{calcularCostoAnualTotal(name.demanda, name.costoxunidad, calcularCantidadOptimaDePedido(name.demanda, name.costoDePreparacion, name.costoAnualDeMantenimiento), name.costoDePreparacion, name.costoAnualDeMantenimiento )}}</ion-item>         
+           
+    </ion-list>  
+  </ion-card>  
+ </ion-content>  

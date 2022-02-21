@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-button slot="start" fill="clear" (click)="onReturn()">
+      <ion-icon  name="arrow-back-outline" style="color: #000">
+      </ion-icon>
+    </ion-button>
+    <ion-title></ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <h3>Modifica cantidad de {{name.nombrei}}</h3>
+
+  <ion-item>
+    <ion-label position="floating">Cantidad</ion-label>
+    <ion-input [(ngModel)]="cantidad" type="number" name="cantidad"></ion-input>
+  </ion-item>
+  
+   <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-button (click)="actualiza(1)" expand="block">Añadir</ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button (click)="actualiza(0)" expand="block">Quitar</ion-button>
+  
+      </ion-col>
+     
+    </ion-row>
+    </ion-grid>
+  
+  <br>
+  
+</ion-content>
